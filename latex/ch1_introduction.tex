@@ -1,0 +1,19 @@
+\section{Wstęp}
+
+% cel pracy
+Celem niniejszej pracy jest opracowanie modelu predykcyjnego do estymacji sił hydrodynamicznych działających na drona podwodnego, czyli siły nośnej $L$, siły oporu $D$ oraz momentu przechylającego $M$, na podstawie wcześniej przeprowadzonej symulacji CFD. Model pozwoli na oszacowanie sił działających na drona w konkretnym punkcie jego trajektorii bez konieczności przeprowadzania symulacji 6DOF.
+
+% motywacja pracy
+Główną motywacją opracowania tego typu modelu jest znacznie niższa złożoność obliczeniowa modelu zero-wymiarowego drona opartego na charakterystykach sił hydrodynamicznych oraz ich współczynników. Tego typu model pozwala na szybką analizę sił w zależności od trajektorii, podczas gdy symulacje 6DOF często zajmują po kilka-kilkadziesiąt godzin. 
+
+% tło sytuacyjne
+Drony podwodne można podzielić na dwie główne klasy: ROV (Remotely Operated Vehicle) - czyli zdalnie sterowane pojazdy podwodne, połączone za pomocą wiązki elektrycznej i sterowane z poziomu konsoli przez operatora, oraz AUV (Autonomous Underwater Vehicle) - czyli autonomiczne pojazdy podwodne, które nie wymagają obsługi i/lub nadzoru operatora do wykonywania zadań.\cite{auv-types}
+
+Tematyka pracy skupia się na analizie dronów drugiej kategorii, konkretniej na AUV typu Glider. Są to AUV, które zamiast konwencjonalnego napędu (np. śruba, pędnik) stosują zmiany wyporności i siłę nośną. Zmiana wyporności skutkuje zmianą środka ciężkości, co przekłada się na zanurzenie lub wynurzenie z kątem natarcia $\alpha$, natomiast para skrzydeł zapewnia siłę nośną co przekłada się na ruch poziomy drona.\cite{seaglider_auv}
+
+Drony tego typu  z uwagi na ich wysoce energooszczędny mechanizm napędowy oraz bardzo wysoki zasięg są chętnie stosowane w prowadzeniu badań z zakresu oceanografii, fizyki, chemii i biologii oceanu, znajdują też zastosowanie w roli zwiadowczej.\cite{auv-types}\cite{seaglider_auv}
+% Przegląd technik modelowania ML
+
+Algorytmy uczenia maszynowego stosowane do modeli predykcyjnych w najogólniejszy sposób można podzielić na algorytmy uczenia nadzorowanego i algorytmy uczenia nienadzorowanego.\cite{ibm-ml-1} Uczenie nadzorowane jest sposobem uczenia, w którym zbiór danych treningowych zawiera dane etykietowane, natomiast uczenie nienadzorowane działa na danych nieetykietowanych\cite{ibm-ml-1}\cite{ml-nafali}. W przypadku danych uzyskanych w ramach symulacji CFD mamy do czynienia z danymi etykietowanymi (parametry wejściowe i wyjściowe będą znane), a więc uczeniem nadzorowanym. 
+
+Problemy uczenia nadzorowanego można wydzielić na problemy klasyfikacji i regresji\cite{ibm-ml-1}, przy czym przewidywanie sił hydrodynamicznych będzie należało do grupy problemów regresji - szukamy relacji między prędkością, kątem natarcia (stanowią one dane wejściowe modelu) a siłą nośną, oporu i momentem przechylającym (stanowią one dane wyjściowe modelu). Do najpopularniejszych algorytmów stosowanych w problemach regresji należą między innymi regresja liniowa, regresja wielomianowa czy też zastosowanie sieci neuronowych.

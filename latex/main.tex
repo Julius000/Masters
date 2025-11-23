@@ -1,0 +1,78 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[polish, english]{babel}
+\usepackage[top=1cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{lipsum}
+\usepackage{indentfirst}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{setspace}
+\usepackage{textgreek}
+\usepackage{abstract}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage[tableposition=top]{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+%\usepackage{topcapt}
+\usepackage[backend=biber, style=numeric]{biblatex}
+\addbibresource{refs.bib}
+
+% Title Page
+\title{Magisterka working title}
+\author{Juliusz Kaczurba}
+
+\begin{document}
+\setstretch{1.15}   	
+	\maketitle
+    \thispagestyle{empty}
+	\newpage
+    \input{abstract.tex}
+    
+	\tableofcontents
+    \setcounter{page}{1}
+	\newpage
+    
+	\include{ch1_introduction}
+    
+	\include{ch2_cfd}
+
+    \section{Program do analizy trajektorii}
+        \subsection{Wstęp}
+        \subsection{Model matematyczny}
+        
+        \subsection{Algorytm uczenia}
+        \subsection{Skrypt do symulacji trajektorii drona}
+        \subsection{Porównanie wyników predykcji i symulacji}
+        \subsection{Test różnych trajektorii}
+
+    \section{Wnioski}
+
+    \newpage
+    \printbibliography
+    
+    \newpage
+    \section{Wykaz symboli i znaków}
+    
+    \newpage
+    \section{Spis rysunków}
+    
+    \newpage
+    \section{Spis tabel}
+    
+    \newpage
+    \section{Spis załączników}
+    
+    \newpage
+    \section{Załączniki}
+	
+\end{document}
