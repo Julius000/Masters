@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.11.22)  23 NOV 2025 22:01
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.11.22)  24 NOV 2025 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1003,67 +1003,15 @@ Package biblatex Info: Reference segment=0 on input line 34.
  [1]
 \openout2 = `ch1_introduction.aux'.
 
- (ch1_introduction.tex
-
-LaTeX Warning: Citation 'auv-types' on page 2 undefined on input line 10.
-
-
-Overfull \hbox (36.56721pt too wide) in paragraph at lines 10--11
-\TU/lmr/m/n/12 pojazdy podwodne, które nie wymagają obsługi i/lub nadzoru opera
-tora do wykonywania zadań.[[]] 
- []
-
-
-LaTeX Warning: Citation 'seaglider_auv' on page 2 undefined on input line 12.
-
-
-LaTeX Warning: Citation 'auv-types' on page 2 undefined on input line 14.
-
-
-LaTeX Warning: Citation 'seaglider_auv' on page 2 undefined on input line 14.
-
-
-LaTeX Warning: Citation 'ibm-ml-1' on page 2 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'ibm-ml-1' on page 2 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'ml-nafali' on page 2 undefined on input line 17.
-
-
-Overfull \hbox (18.4064pt too wide) in paragraph at lines 17--18
-\TU/lmr/m/n/12 można podzielić na algorytmy uczenia nadzorowanego i algorytmy u
-czenia nienadzorowanego.[[]]
- []
-
-
-Overfull \hbox (39.19121pt too wide) in paragraph at lines 17--18
-\TU/lmr/m/n/12 etykietowane, natomiast uczenie nienadzorowane działa na danych 
-nieetykietowanych[[]][[]].
- []
-
-
-LaTeX Warning: Citation 'ibm-ml-1' on page 2 undefined on input line 19.
-
-) [2
+ (ch1_introduction.tex) [2
 
 ]
 \openout2 = `ch2_cfd.aux'.
 
  (ch2_cfd.tex
-
-LaTeX Warning: Citation 'dron-main' on page 3 undefined on input line 9.
-
-
-Overfull \hbox (13.85184pt too wide) in paragraph at lines 9--10
-\TU/lmr/m/n/12 skrzydłami o profilu Clark-Y i statecznikami o profilu NACA J501
-2 przygotowano domenę.[[]]. 
- []
-
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
-[3
+ [3
 
 
 
@@ -1087,23 +1035,21 @@ File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
- [5]
 
-LaTeX Warning: Citation 'dron-main' on page 6 undefined on input line 132.
-
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-[6]
+[5]
+File: pictures/cl_compare.png Graphic file (type bmp)
+<pictures/cl_compare.png>
+File: pictures/cd_compare.png Graphic file (type bmp)
+<pictures/cd_compare.png>
+File: pictures/cm_compare.png Graphic file (type bmp)
+<pictures/cm_compare.png>
+File: pictures/dcl.png Graphic file (type bmp)
+<pictures/dcl.png>
+File: pictures/dcd.png Graphic file (type bmp)
+<pictures/dcd.png>
+File: pictures/dcm.png Graphic file (type bmp)
+<pictures/dcm.png>
+ [6]
 File: pictures/cl-35.png Graphic file (type bmp)
 <pictures/cl-35.png>
 File: pictures/cd-35.png Graphic file (type bmp)
@@ -1193,24 +1139,6 @@ Overfull \vbox (1600.44817pt too high) has occurred while \output is active []
 
 
 [9]
-
-LaTeX Warning: Citation 'ugor' on page 10 undefined on input line 336.
-
-
-LaTeX Warning: Citation '8014443' on page 10 undefined on input line 336.
-
-
-LaTeX Warning: Citation 'Graver2005UNDERWATERGD' on page 10 undefined on input 
-line 336.
-
-
-LaTeX Warning: Citation 'Jenkins2003UnderwaterGS' on page 10 undefined on input
- line 336.
-
-
-LaTeX Warning: Citation 'Graver2005UNDERWATERGD' on page 10 undefined on input 
-line 336.
-
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 File: pictures/dummy.png Graphic file (type bmp)
@@ -1223,38 +1151,26 @@ File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
-[10]) [11] [12
+ [10]) [11] [12
 
 
-]
-
-LaTeX Warning: Empty bibliography on input line 61.
-
-[13] [14] [15] [16] [17] (main.aux (ch1_introduction.aux) (ch2_cfd.aux))
+] [13] [14] [15] [16] [17] [18] (main.aux
+(ch1_introduction.aux) (ch2_cfd.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20016 strings out of 402987
- 407174 string characters out of 5455768
- 1414851 words of memory out of 5000000
- 48500 multiletter control sequences out of 15000+600000
- 636738 words of font info for 75 fonts, out of 8000000 for 9000
+ 20144 strings out of 402987
+ 410900 string characters out of 5455768
+ 1418170 words of memory out of 5000000
+ 48616 multiletter control sequences out of 15000+600000
+ 636762 words of font info for 78 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,12n,79p,846b,5623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (20 pages).
+Output written on main.pdf (21 pages).

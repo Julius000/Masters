@@ -1,0 +1,413 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{ibm-ml-1}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f09c3706ae1f1d7379cfda8cf8dc6da5}{%
+           family={Delua},
+           familyi={D\bibinitperiod},
+           given={Julianna},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f09c3706ae1f1d7379cfda8cf8dc6da5}
+      \strng{fullhash}{f09c3706ae1f1d7379cfda8cf8dc6da5}
+      \strng{fullhashraw}{f09c3706ae1f1d7379cfda8cf8dc6da5}
+      \strng{bibnamehash}{f09c3706ae1f1d7379cfda8cf8dc6da5}
+      \strng{authorbibnamehash}{f09c3706ae1f1d7379cfda8cf8dc6da5}
+      \strng{authornamehash}{f09c3706ae1f1d7379cfda8cf8dc6da5}
+      \strng{authorfullhash}{f09c3706ae1f1d7379cfda8cf8dc6da5}
+      \strng{authorfullhashraw}{f09c3706ae1f1d7379cfda8cf8dc6da5}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Supervised versus unsupervised learning: What's the difference?}
+      \verb{urlraw}
+      \verb https://www.ibm.com/think/topics/supervised-vs-unsupervised-learning
+      \endverb
+      \verb{url}
+      \verb https://www.ibm.com/think/topics/supervised-vs-unsupervised-learning
+      \endverb
+    \endentry
+    \entry{Graver2005UNDERWATERGD}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=56e9a519337f103be7c8eaeb1c5152c0}{%
+           family={Graver},
+           familyi={G\bibinitperiod},
+           given={Joshua\bibnamedelima Grady},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Princeton University}%
+      }
+      \list{location}{1}{%
+        {Princeton, NJ}%
+      }
+      \strng{namehash}{56e9a519337f103be7c8eaeb1c5152c0}
+      \strng{fullhash}{56e9a519337f103be7c8eaeb1c5152c0}
+      \strng{fullhashraw}{56e9a519337f103be7c8eaeb1c5152c0}
+      \strng{bibnamehash}{56e9a519337f103be7c8eaeb1c5152c0}
+      \strng{authorbibnamehash}{56e9a519337f103be7c8eaeb1c5152c0}
+      \strng{authornamehash}{56e9a519337f103be7c8eaeb1c5152c0}
+      \strng{authorfullhash}{56e9a519337f103be7c8eaeb1c5152c0}
+      \strng{authorfullhashraw}{56e9a519337f103be7c8eaeb1c5152c0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{UNDERWATER GLIDERS: DYNAMICS, CONTROL AND DESIGN}
+      \field{type}{phdthesis}
+      \field{year}{2005}
+    \endentry
+    \entry{Jenkins2003UnderwaterGS}{article}{}{}
+      \name{author}{14}{}{%
+        {{hash=53f99f87322fdb0cfda3972226b7d156}{%
+           family={Jenkins},
+           familyi={J\bibinitperiod},
+           given={Scott\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=742d1803d1b81abbe47b0d0048ddb435}{%
+           family={Humphreys},
+           familyi={H\bibinitperiod},
+           given={Douglas\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3a7f6e4c5e24a00108ac04a703f747de}{%
+           family={Sherman},
+           familyi={S\bibinitperiod},
+           given={Jeffrey\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=de86ee5ea37caa2e496a0253e8569267}{%
+           family={Osse},
+           familyi={O\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=484738a637d44b27c758636f146749f6}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Clayton},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4a8f7c493dc109ca31debb5ec617bc96}{%
+           family={Leonard},
+           familyi={L\bibinitperiod},
+           given={Naomi\bibnamedelima Ehrich},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=d50acbbe55a6199e221d6a903f6476ca}{%
+           family={Graver},
+           familyi={G\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+        {{hash=15ca6f1a4dd23816adcf1465c1816c92}{%
+           family={Bachmayer},
+           familyi={B\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b929204f36a1607508ec68094d584aaa}{%
+           family={Clem},
+           familyi={C\bibinitperiod},
+           given={Ted\bibnamedelima R.},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=00f7e6c034582a74935833192b4803e5}{%
+           family={Carroll},
+           familyi={C\bibinitperiod},
+           given={Paul\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e2dd19ec428507bd0ba13f285496cac9}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={P.S.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9558eeaee3fe900636a63aa03fd583be}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=04616fcd0ab12b3fc5e116d417697be8}{%
+           family={Worley},
+           familyi={W\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0908b4e40d44407c3e6aabd155daba87}{%
+           family={Wasyl},
+           familyi={W\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec0e92392b899ee0e1f700b06b42b218}
+      \strng{fullhash}{ef700253df496d4f8a5f72e6e43a5162}
+      \strng{fullhashraw}{ef700253df496d4f8a5f72e6e43a5162}
+      \strng{bibnamehash}{ec0e92392b899ee0e1f700b06b42b218}
+      \strng{authorbibnamehash}{ec0e92392b899ee0e1f700b06b42b218}
+      \strng{authornamehash}{ec0e92392b899ee0e1f700b06b42b218}
+      \strng{authorfullhash}{ef700253df496d4f8a5f72e6e43a5162}
+      \strng{authorfullhashraw}{ef700253df496d4f8a5f72e6e43a5162}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scripps Institution of Oceanography}
+      \field{title}{Underwater Glider System Study}
+      \field{year}{2003}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:110669779
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:110669779
+      \endverb
+    \endentry
+    \entry{KUREC2024119047}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=c1e806aac733ddeff6b57cabc62f7e37}{%
+           family={Kurec},
+           familyi={K\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c741aa858e38d54d07018613e9ae7785}{%
+           family={Piechna},
+           familyi={P\bibinitperiod},
+           given={Janusz},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2fa0e67e9c5833d61903457731ec1692}{%
+           family={Kamieniecki},
+           familyi={K\bibinitperiod},
+           given={Konrad},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c78627b87fcc491bdda4c37ac209649f}{%
+           family={Szumbarski},
+           familyi={S\bibinitperiod},
+           given={Jacek},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1063e02a552e95ba184a302c38ec99bb}
+      \strng{fullhash}{6fb04336c8ba5c92b2fc893aa2b23f7b}
+      \strng{fullhashraw}{6fb04336c8ba5c92b2fc893aa2b23f7b}
+      \strng{bibnamehash}{1063e02a552e95ba184a302c38ec99bb}
+      \strng{authorbibnamehash}{1063e02a552e95ba184a302c38ec99bb}
+      \strng{authornamehash}{1063e02a552e95ba184a302c38ec99bb}
+      \strng{authorfullhash}{6fb04336c8ba5c92b2fc893aa2b23f7b}
+      \strng{authorfullhashraw}{6fb04336c8ba5c92b2fc893aa2b23f7b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0029-8018}
+      \field{journaltitle}{Ocean Engineering}
+      \field{title}{Hydrodynamic features specific to the dynamic movements of an underwater glider}
+      \field{volume}{312}
+      \field{year}{2024}
+      \field{pages}{119047}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.oceaneng.2024.119047
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0029801824023850
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0029801824023850
+      \endverb
+      \keyw{Underwater glider,Hydrodynamics,Dynamic movement}
+    \endentry
+    \entry{8014443}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=b21b26a7abb0a7df9cf7e123db472ce8}{%
+           family={Lidtke},
+           familyi={L\bibinitperiod},
+           given={Artur\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=dd5c1f9b58d55db00086b2731d4b5a5e}{%
+           family={Turnock},
+           familyi={T\bibinitperiod},
+           given={Stephen\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=07058698c4a3c5d8c4d9b25c077554fa}{%
+           family={Downes},
+           familyi={D\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{46f820f11a5caac34de9ed2d6970ebe6}
+      \strng{fullhash}{46f820f11a5caac34de9ed2d6970ebe6}
+      \strng{fullhashraw}{46f820f11a5caac34de9ed2d6970ebe6}
+      \strng{bibnamehash}{46f820f11a5caac34de9ed2d6970ebe6}
+      \strng{authorbibnamehash}{46f820f11a5caac34de9ed2d6970ebe6}
+      \strng{authornamehash}{46f820f11a5caac34de9ed2d6970ebe6}
+      \strng{authorfullhash}{46f820f11a5caac34de9ed2d6970ebe6}
+      \strng{authorfullhashraw}{46f820f11a5caac34de9ed2d6970ebe6}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of Oceanic Engineering}
+      \field{number}{2}
+      \field{title}{Hydrodynamic Design of Underwater Gliders Using k-k $_L$-$\omega$ Reynolds Averaged Navier–Stokes Transition Model}
+      \field{volume}{43}
+      \field{year}{2018}
+      \field{pages}{356\bibrangedash 368}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/JOE.2017.2733778
+      \endverb
+      \keyw{Drag;Mathematical model;Hydrodynamics;Buoyancy;Shape;Sensors;Engines;CFD;fluid dynamics;performance prediction;underwater gliders}
+    \endentry
+    \entry{auv-types}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9cc52bdb29a303a651b6b75c79040400}{%
+           family={Mark\bibnamedelima Fairchild},
+           familyi={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Blue\bibnamedelima Robotics},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{9cc52bdb29a303a651b6b75c79040400}
+      \strng{fullhash}{9cc52bdb29a303a651b6b75c79040400}
+      \strng{fullhashraw}{9cc52bdb29a303a651b6b75c79040400}
+      \strng{bibnamehash}{9cc52bdb29a303a651b6b75c79040400}
+      \strng{authorbibnamehash}{9cc52bdb29a303a651b6b75c79040400}
+      \strng{authornamehash}{9cc52bdb29a303a651b6b75c79040400}
+      \strng{authorfullhash}{9cc52bdb29a303a651b6b75c79040400}
+      \strng{authorfullhashraw}{9cc52bdb29a303a651b6b75c79040400}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Types of Autonomous Underwater Vehicles, Remotely Operated Vehicles, and Uncrewed Surface Vehicles}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://bluerobotics.com/types-of-autonomous-underwater-vehicles-remotely-operated-vehicles-and-uncrewed-surface-vehicles
+      \endverb
+      \verb{url}
+      \verb https://bluerobotics.com/types-of-autonomous-underwater-vehicles-remotely-operated-vehicles-and-uncrewed-surface-vehicles
+      \endverb
+    \endentry
+    \entry{ml-nafali}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a61a4853ea0d788cbda2fbd37db468b2}{%
+           family={nauki},
+           familyi={n\bibinitperiod},
+           given={Na},
+           giveni={N\bibinitperiod},
+           prefix={fali},
+           prefixi={f\bibinitperiod}}}%
+      }
+      \strng{namehash}{a61a4853ea0d788cbda2fbd37db468b2}
+      \strng{fullhash}{a61a4853ea0d788cbda2fbd37db468b2}
+      \strng{fullhashraw}{a61a4853ea0d788cbda2fbd37db468b2}
+      \strng{bibnamehash}{a61a4853ea0d788cbda2fbd37db468b2}
+      \strng{authorbibnamehash}{a61a4853ea0d788cbda2fbd37db468b2}
+      \strng{authornamehash}{a61a4853ea0d788cbda2fbd37db468b2}
+      \strng{authorfullhash}{a61a4853ea0d788cbda2fbd37db468b2}
+      \strng{authorfullhashraw}{a61a4853ea0d788cbda2fbd37db468b2}
+      \field{sortinit}{n}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Uczenie maszynowe, nadzorowane i nienadzorowane - czyli o co w tym wszystkim chodzi?}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://nafalinauki.pl/uczenie-maszynowe/
+      \endverb
+      \verb{url}
+      \verb https://nafalinauki.pl/uczenie-maszynowe/
+      \endverb
+    \endentry
+    \entry{ugor}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=df4f2acfb2d9e792c37ffece061141df}{%
+           family={Rudnick},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3a48ad3ef843e46c92f2c035c36957bd}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Russ},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cc059a3c73034d868fccbb92fc8e0a3e}{%
+           family={Eriksen},
+           familyi={E\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+        {{hash=199d0a77a457fb2fecf46cf431b74bac}{%
+           family={Fratantoni},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d5ae1b9cb9b4af851471bc0256d2fb84}{%
+           family={Perry},
+           familyi={P\bibinitperiod},
+           given={Mary\bibnamedelima Jane},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e7beb4dc8164ea9fa690fbe4a63387b6}
+      \strng{fullhash}{a032c99d7236b5ee573ae0c180a46921}
+      \strng{fullhashraw}{a032c99d7236b5ee573ae0c180a46921}
+      \strng{bibnamehash}{e7beb4dc8164ea9fa690fbe4a63387b6}
+      \strng{authorbibnamehash}{e7beb4dc8164ea9fa690fbe4a63387b6}
+      \strng{authornamehash}{e7beb4dc8164ea9fa690fbe4a63387b6}
+      \strng{authorfullhash}{a032c99d7236b5ee573ae0c180a46921}
+      \strng{authorfullhashraw}{a032c99d7236b5ee573ae0c180a46921}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Marine Technology Society Journal}
+      \field{month}{06}
+      \field{title}{Underwater Gliders for Ocean Research}
+      \field{volume}{38}
+      \field{year}{2004}
+      \field{pages}{73\bibrangedash 84}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.4031/002533204787522703
+      \endverb
+    \endentry
+    \entry{seaglider_auv}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=06c5475c03b0c9a612bcadf4f380d622}{%
+           family={University\bibnamedelimb of\bibnamedelima Washington},
+           familyi={U\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Applied\bibnamedelimb Physics\bibnamedelima Laboratory},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{06c5475c03b0c9a612bcadf4f380d622}
+      \strng{fullhash}{06c5475c03b0c9a612bcadf4f380d622}
+      \strng{fullhashraw}{06c5475c03b0c9a612bcadf4f380d622}
+      \strng{bibnamehash}{06c5475c03b0c9a612bcadf4f380d622}
+      \strng{authorbibnamehash}{06c5475c03b0c9a612bcadf4f380d622}
+      \strng{authornamehash}{06c5475c03b0c9a612bcadf4f380d622}
+      \strng{authorfullhash}{06c5475c03b0c9a612bcadf4f380d622}
+      \strng{authorfullhashraw}{06c5475c03b0c9a612bcadf4f380d622}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Seaglider: Autonomous Underwater Vehicle}
+      \verb{urlraw}
+      \verb https://apl.uw.edu/project/project.php?id=seaglider_auv
+      \endverb
+      \verb{url}
+      \verb https://apl.uw.edu/project/project.php?id=seaglider_auv
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -6,7 +6,7 @@ W związku z tym symulację CFD wydzielono na 3
 
 
 \subsection{Domena}
-Na podstawie wcześniej przygotowanej geometrii drona opartej o model DARPA Suboff Hull, ze skrzydłami o profilu Clark-Y i statecznikami o profilu NACA J5012 przygotowano domenę.\cite{dron-main}. 
+Na podstawie wcześniej przygotowanej geometrii drona opartej o model DARPA Suboff Hull, ze skrzydłami o profilu Clark-Y i statecznikami o profilu NACA J5012 przygotowano domenę.\cite{KUREC2024119047}. 
 
 Z uwagi na konieczność zbadania sił przy różnych wartościach kątą natarcia $\alpha$ drona oraz zbadania sił występujących przy ruchu przechylającym domena została podzielona na objętość zewnętrzną i objętość wewnętrzną z geometrią badanego drona. Objętość wewnętrzną stanowił walec położony na środku układu współrzędnych, o średnicy D = 2 m i wysokości H = 1 m, natomiast objętość zewnętrzną stanowił prostopadłościan, w którym wlot znajdował się w odległości 5 długości L, wylot 10 długości L, ścianki domeny 5 długości L od środka układu współrzędnych, domenę i jej wymiary przedstawiono na rys. \ref{fig:domain}.
 
@@ -129,7 +129,7 @@ Dobrano wysokości pierwszej warstwy inflacyjnej tak aby uzyskać wartości $\te
 
 \subsubsection{Walidacja z poprzednio przeprowadzonymi symulacjami}
 W celu potwierdzenia powtarzalności z poprzednio przeprowadzonymi symulacjami przeprowadzono wstępne badanie współczynników cl, cd, cm względem kąta natarcia $\alpha$.
-Badanie przeprowadzono dla zakresu kąta natarcia $\alpha\in(0^\circ; 15^\circ)$ ze skokiem $\Delta\alpha=2,5^\circ$, przy prędkości przepływu $\text{v}=\text{0.7 m/s}$. Wyniki porównano z wynikami poprzednio przeprowadzonych symulacji\cite{dron-main} i zestawiono w tabeli \ref{tab:validation}, ich charakterystyki wraz z wykresami błędów względnych przedstawiono na rys \ref{fig:validations}.
+Badanie przeprowadzono dla zakresu kąta natarcia $\alpha\in(0^\circ; 15^\circ)$ ze skokiem $\Delta\alpha=2,5^\circ$, przy prędkości przepływu $\text{v}=\text{0.7 m/s}$. Wyniki porównano z wynikami poprzednio przeprowadzonych symulacji\cite{KUREC2024119047} i zestawiono w tabeli \ref{tab:validation}, ich charakterystyki wraz z wykresami błędów względnych przedstawiono na rys \ref{fig:validations}.
 
 \begin{table}[H]
 	\centering
@@ -154,32 +154,32 @@ Badanie przeprowadzono dla zakresu kąta natarcia $\alpha\in(0^\circ; 15^\circ)$
 	\centering
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/cl_compare.png}
 		\caption{Wykres charakterystyki cl.}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/cd_compare.png}
 		\caption{Wykres błędów względnych cl.}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/cm_compare.png}
 		\caption{Wykres charakterystyki cd.}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/dcl.png}
 		\caption{Wykres błędów względnych cd.}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/dcd.png}
 		\caption{Wykres charakterystyki m.}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/dcm.png}
 		\caption{Wykres błędów względnych cm.}
 	\end{subfigure}
 	
@@ -344,21 +344,21 @@ W celu uzyskania dość dużego zbioru danych przeprowadzono serię symulacji dl
 	\centering
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/cl-bulk.png}
 		\caption{Zbiorcze wykresy charakterystyk cl.}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/cd-bulk.png}
 		\caption{Zbiorcze wykresy charakterystyk cd.}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/cm-bulk.png}
 		\caption{Zbiorcze wykresy charakterystyk cm.}
 	\end{subfigure}
 	
-	\caption{Zbiorcze wykresy uzyskanych charakterystyk cl, cd, cm dla wartości kąta natarcia $\alpha=(-30^\circ, 30^\circ)$.}
+	\caption{Zbiorcze wykresy uzyskanych charakterystyk cl, cd, cm dla zakresu kąta natarcia $\alpha=(-30^\circ, 30^\circ)$.}
 	\label{fig:combined-coef-graphs}
 \end{figure}    
 
@@ -380,7 +380,7 @@ W celu uzyskania dość dużego zbioru danych przeprowadzono serię symulacji dl
 		\caption{Zbiorcze wykresy charakterystyk M.}
 	\end{subfigure}
 	
-	\caption{Zbiorcze wykresy uzyskanych charakterystyk L, D, M dla wartości kąta natarcia $\alpha=(-30^\circ, 30^\circ)$.}
+	\caption{Zbiorcze wykresy uzyskanych charakterystyk L, D, M dla zakresu kąta natarcia $\alpha=(-30^\circ, 30^\circ)$.}
 	\label{fig:combined-force-graphs}
 \end{figure}    
 
