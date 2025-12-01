@@ -5,27 +5,27 @@
 \contentsline {section}{\numberline {2}Symulacja CFD}{3}{}%
 \contentsline {subsection}{\numberline {2.1}Opis problemu}{3}{}%
 \contentsline {subsection}{\numberline {2.2}Domena}{3}{}%
-\contentsline {subsection}{\numberline {2.3}Siatka}{4}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Test zbieżności siatki}{4}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}Ustawienia symulacji}{4}{}%
-\contentsline {subsubsection}{\numberline {2.3.3}y+}{4}{}%
-\contentsline {subsubsection}{\numberline {2.3.4}Walidacja z poprzednio przeprowadzonymi symulacjami}{6}{}%
-\contentsline {subsection}{\numberline {2.4}Wybranie zakresów operacyjnych kąta natarcia drona}{7}{}%
-\contentsline {subsection}{\numberline {2.5}Symulacja w stanie ustalonym}{10}{}%
-\contentsline {subsection}{\numberline {2.6}Symulacja manewrów}{11}{}%
-\contentsline {subsubsection}{\numberline {2.6.1}Wariant A}{11}{}%
-\contentsline {subsubsection}{\numberline {2.6.2}Wariant B}{11}{}%
-\contentsline {subsection}{\numberline {2.7}Results}{11}{}%
-\contentsline {section}{\numberline {3}Program do analizy trajektorii}{12}{}%
-\contentsline {subsection}{\numberline {3.1}Wstęp}{12}{}%
-\contentsline {subsection}{\numberline {3.2}Model matematyczny}{12}{}%
-\contentsline {subsection}{\numberline {3.3}Algorytm uczenia}{12}{}%
-\contentsline {subsection}{\numberline {3.4}Skrypt do symulacji trajektorii drona}{12}{}%
-\contentsline {subsection}{\numberline {3.5}Porównanie wyników predykcji i symulacji}{12}{}%
-\contentsline {subsection}{\numberline {3.6}Test różnych trajektorii}{12}{}%
-\contentsline {section}{\numberline {4}Wnioski}{12}{}%
-\contentsline {section}{\numberline {5}Wykaz symboli i znaków}{14}{}%
-\contentsline {section}{\numberline {6}Spis rysunków}{15}{}%
-\contentsline {section}{\numberline {7}Spis tabel}{16}{}%
-\contentsline {section}{\numberline {8}Spis załączników}{17}{}%
-\contentsline {section}{\numberline {9}Załączniki}{18}{}%
+\contentsline {subsection}{\numberline {2.3}Ustawienia symulacji}{4}{}%
+\contentsline {subsection}{\numberline {2.4}Siatka}{4}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Test zbieżności siatki}{4}{}%
+\contentsline {subsubsection}{\numberline {2.4.2}y+}{6}{}%
+\contentsline {subsubsection}{\numberline {2.4.3}Walidacja z poprzednio przeprowadzonymi symulacjami}{8}{}%
+\contentsline {subsection}{\numberline {2.5}Wybranie zakresów operacyjnych kąta natarcia drona}{9}{}%
+\contentsline {subsection}{\numberline {2.6}Symulacja w stanie ustalonym}{12}{}%
+\contentsline {subsection}{\numberline {2.7}Symulacja manewrów}{13}{}%
+\contentsline {subsubsection}{\numberline {2.7.1}Ustawienia symulacji}{14}{}%
+\contentsline {subsubsection}{\numberline {2.7.2}Ustawienia symulacji}{14}{}%
+\contentsline {subsection}{\numberline {2.8}Results}{14}{}%
+\contentsline {section}{\numberline {3}Program do analizy trajektorii}{15}{}%
+\contentsline {subsection}{\numberline {3.1}Wstęp}{15}{}%
+\contentsline {subsection}{\numberline {3.2}Model matematyczny}{15}{}%
+\contentsline {subsection}{\numberline {3.3}Algorytm uczenia}{15}{}%
+\contentsline {subsection}{\numberline {3.4}Skrypt do symulacji trajektorii drona}{15}{}%
+\contentsline {subsection}{\numberline {3.5}Porównanie wyników predykcji i symulacji}{15}{}%
+\contentsline {subsection}{\numberline {3.6}Test różnych trajektorii}{15}{}%
+\contentsline {section}{\numberline {4}Wnioski}{15}{}%
+\contentsline {section}{\numberline {5}Wykaz symboli i znaków}{17}{}%
+\contentsline {section}{\numberline {6}Spis rysunków}{18}{}%
+\contentsline {section}{\numberline {7}Spis tabel}{19}{}%
+\contentsline {section}{\numberline {8}Spis załączników}{20}{}%
+\contentsline {section}{\numberline {9}Załączniki}{21}{}%

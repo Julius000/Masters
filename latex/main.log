@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.11.22)  24 NOV 2025 23:17
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.11.22)  30 NOV 2025 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,34 +1009,49 @@ Package biblatex Info: Reference segment=0 on input line 34.
 \openout2 = `ch2_cfd.aux'.
 
  (ch2_cfd.tex
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
+File: pictures/glider-traj.png Graphic file (type bmp)
+<pictures/glider-traj.png>
+File: pictures/domain-dimensions.png Graphic file (type bmp)
+<pictures/domain-dimensions.png>
+File: pictures/domain-dimensions-front.png Graphic file (type bmp)
+<pictures/domain-dimensions-front.png>
+File: pictures/internal-volume-dimensions.png Graphic file (type bmp)
+<pictures/internal-volume-dimensions.png>
  [3
 
 
 
-]
+] [4]
 File: pictures/cl-conv.png Graphic file (type bmp)
 <pictures/cl-conv.png>
 File: pictures/cd-conv.png Graphic file (type bmp)
 <pictures/cd-conv.png>
 File: pictures/cm-conv.png Graphic file (type bmp)
 <pictures/cm-conv.png>
- [4]
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
 
 [5]
+File: pictures/mesh-side.png Graphic file (type bmp)
+<pictures/mesh-side.png>
+File: pictures/mesh-iso.png Graphic file (type bmp)
+<pictures/mesh-iso.png>
+File: pictures/drone-side.png Graphic file (type bmp)
+<pictures/drone-side.png>
+File: pictures/drone-iso.png Graphic file (type bmp)
+<pictures/drone-iso.png>
+ [6]
+File: pictures/dummy.png Graphic file (type bmp)
+<pictures/dummy.png>
+File: pictures/dummy.png Graphic file (type bmp)
+<pictures/dummy.png>
+File: pictures/dummy.png Graphic file (type bmp)
+<pictures/dummy.png>
+File: pictures/dummy.png Graphic file (type bmp)
+<pictures/dummy.png>
+File: pictures/dummy.png Graphic file (type bmp)
+<pictures/dummy.png>
+File: pictures/dummy.png Graphic file (type bmp)
+<pictures/dummy.png>
+ [7]
 File: pictures/cl_compare.png Graphic file (type bmp)
 <pictures/cl_compare.png>
 File: pictures/cd_compare.png Graphic file (type bmp)
@@ -1049,14 +1064,14 @@ File: pictures/dcd.png Graphic file (type bmp)
 <pictures/dcd.png>
 File: pictures/dcm.png Graphic file (type bmp)
 <pictures/dcm.png>
- [6]
+ [8]
 File: pictures/cl-35.png Graphic file (type bmp)
 <pictures/cl-35.png>
 File: pictures/cd-35.png Graphic file (type bmp)
 <pictures/cd-35.png>
 File: pictures/clcd-35.png Graphic file (type bmp)
 <pictures/clcd-35.png>
- [7]
+ [9]
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 File: pictures/dummy.png Graphic file (type bmp)
@@ -1064,7 +1079,7 @@ File: pictures/dummy.png Graphic file (type bmp)
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 
-Underfull \hbox (badness 1558) in paragraph at lines 232--232
+Underfull \hbox (badness 1558) in paragraph at lines 290--290
 []\TU/lmr/m/n/10.95 (c) |Kontury rozkładu ciśnienia dynam-
  []
 
@@ -1075,7 +1090,7 @@ File: pictures/dummy.png Graphic file (type bmp)
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 
-Underfull \hbox (badness 1888) in paragraph at lines 248--248
+Underfull \hbox (badness 1888) in paragraph at lines 306--306
 []\TU/lmr/m/n/10.95 (f) |Kontury rozkładu ciśnienia dynam-
  []
 
@@ -1086,7 +1101,7 @@ File: pictures/dummy.png Graphic file (type bmp)
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 
-Underfull \hbox (badness 2073) in paragraph at lines 264--264
+Underfull \hbox (badness 2073) in paragraph at lines 322--322
 []\TU/lmr/m/n/10.95 (i) |Kontury rozkładu ciśnienia dynam-
  []
 
@@ -1097,7 +1112,7 @@ File: pictures/dummy.png Graphic file (type bmp)
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 
-Underfull \hbox (badness 2073) in paragraph at lines 280--280
+Underfull \hbox (badness 2073) in paragraph at lines 338--338
 []\TU/lmr/m/n/10.95 (l) |Kontury rozkładu ciśnienia dynam-
  []
 
@@ -1108,7 +1123,7 @@ File: pictures/dummy.png Graphic file (type bmp)
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 
-Underfull \hbox (badness 1406) in paragraph at lines 296--296
+Underfull \hbox (badness 1406) in paragraph at lines 354--354
 []\TU/lmr/m/n/10.95 (o) |Kontury rozkładu ciśnienia dynam-
  []
 
@@ -1119,7 +1134,7 @@ File: pictures/dummy.png Graphic file (type bmp)
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 
-Underfull \hbox (badness 1708) in paragraph at lines 312--312
+Underfull \hbox (badness 1708) in paragraph at lines 370--370
 []\TU/lmr/m/n/10.95 (r) |Kontury rozkładu ciśnienia dynam-
  []
 
@@ -1130,31 +1145,34 @@ File: pictures/dummy.png Graphic file (type bmp)
 File: pictures/dummy.png Graphic file (type bmp)
 <pictures/dummy.png>
 
-Underfull \hbox (badness 1264) in paragraph at lines 328--328
+Underfull \hbox (badness 1264) in paragraph at lines 386--386
 []\TU/lmr/m/n/10.95 (u) |Kontury rozkładu ciśnienia dynam-
  []
 
-[8]
+[10]
 Overfull \vbox (1600.44817pt too high) has occurred while \output is active []
 
 
-[9]
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
-File: pictures/dummy.png Graphic file (type bmp)
-<pictures/dummy.png>
- [10]) [11] [12
+[11]
+File: pictures/cl-bulk.png Graphic file (type bmp)
+<pictures/cl-bulk.png>
+File: pictures/cd-bulk.png Graphic file (type bmp)
+<pictures/cd-bulk.png>
+File: pictures/cm-bulk.png Graphic file (type bmp)
+<pictures/cm-bulk.png>
+File: pictures/L-bulk.png Graphic file (type bmp)
+<pictures/L-bulk.png>
+File: pictures/D-bulk.png Graphic file (type bmp)
+<pictures/D-bulk.png>
+File: pictures/M-bulk.png Graphic file (type bmp)
+<pictures/M-bulk.png>
+ [12] [13]
+File: pictures/movement-function-example.png Graphic file (type bmp)
+<pictures/movement-function-example.png>
+) [14] [15
 
 
-] [13] [14] [15] [16] [17] [18] (main.aux
+] [16] [17] [18] [19] [20] [21] (main.aux
 (ch1_introduction.aux) (ch2_cfd.aux))
  ***********
 LaTeX2e <2025-11-01>
@@ -1165,12 +1183,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20144 strings out of 402987
- 410900 string characters out of 5455768
- 1418170 words of memory out of 5000000
- 48616 multiletter control sequences out of 15000+600000
+ 20289 strings out of 402987
+ 415035 string characters out of 5455768
+ 1418297 words of memory out of 5000000
+ 48746 multiletter control sequences out of 15000+600000
  636762 words of font info for 78 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,12n,79p,846b,5623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (21 pages).
+Output written on main.pdf (24 pages).

@@ -1,27 +1,52 @@
 \section{Symulacja CFD}
 \subsection{Opis problemu}
-Drony podwodne typu glider typowo poruszają się w trajektorii piło-kształtnej lub trójkątnej, przy czym w punktach ekstremalnych ruchu trajektoria może przyjmować charakter sinusoidalny (przejście z 
+Trajektoria obejmowana przez drony podwodne typu glider typowo ma charaktery piło-kształtny lub trójkątny, typową trajektorię takiego drona przedstawiono na rysunku \ref{fig:drone-traj}.
 
-W związku z tym symulację CFD wydzielono na 3 
-
-
-\subsection{Domena}
-Na podstawie wcześniej przygotowanej geometrii drona opartej o model DARPA Suboff Hull, ze skrzydłami o profilu Clark-Y i statecznikami o profilu NACA J5012 przygotowano domenę.\cite{KUREC2024119047}. 
-
-Z uwagi na konieczność zbadania sił przy różnych wartościach kątą natarcia $\alpha$ drona oraz zbadania sił występujących przy ruchu przechylającym domena została podzielona na objętość zewnętrzną i objętość wewnętrzną z geometrią badanego drona. Objętość wewnętrzną stanowił walec położony na środku układu współrzędnych, o średnicy D = 2 m i wysokości H = 1 m, natomiast objętość zewnętrzną stanowił prostopadłościan, w którym wlot znajdował się w odległości 5 długości L, wylot 10 długości L, ścianki domeny 5 długości L od środka układu współrzędnych, domenę i jej wymiary przedstawiono na rys. \ref{fig:domain}.
-
-Zastosowanie siatki typu non-conformal mesh pozwoliło na przygotowanie siatki strukturalnej dla objętości zewnętrznej i proste sterowanie kątem natarcia $\alpha$ oraz w dalszej części sterowanie prędkością kątową drona $\omega$.
-
-\ref{fig:domain}.            
 \begin{figure}[H]
+	% Dodać źródła lub zmienić - placeholder
 	\centering
-	\includegraphics[width=0.8\linewidth]{pictures/dummy.png}
-	\caption{Domena - widok ogólny}
-	\label{fig:domain}
+	\includegraphics[width=0.7\linewidth]{pictures/glider-traj.png}
+	\caption{Typowa trajektoria drona.}
+	\label{fig:drone-traj}
 \end{figure}
 
 
-\subsection{Siatka}
+Podczas zanurzania lub wynurzania dron wykonuje ruch postępowy, w związku z tym występujące siły hydrodynamiczne można przyjąć za statyczne, natomiast podczas wykonywania manewrów dron będzie poddany dynamicznym, zmiennymi w czasie siłami hydrodynamicznymi. W związku z tym symulację CFD podzielono na 2 części: symulacja ruchu postępowego w stanie ustalonym, i symulacja manewrów w stanie nieustalonym, przy czym wykonano symulacje obu koncepcji manewrów.
+\subsection{Domena}
+Na podstawie wcześniej przygotowanej geometrii drona opartej o model DARPA Suboff Hull, ze skrzydłami o profilu Clark-Y i statecznikami o profilu NACA J5012 przygotowano domenę.\cite{KUREC2024119047}. 
+
+Z uwagi na konieczność zbadania sił przy różnych wartościach kątą natarcia $\alpha$ drona oraz zbadania sił występujących przy ruchu przechylającym domena została podzielona na objętość zewnętrzną i objętość wewnętrzną z geometrią badanego drona. Objętość wewnętrzną stanowił walec położony na środku układu współrzędnych, o średnicy D = 2 m i wysokości H = 1 m, natomiast objętość zewnętrzną stanowił prostopadłościan, w którym wlot znajdował się w odległości 5 długości L, wylot 10 długości L, ścianki domeny 5 długości L od środka układu współrzędnych, domenę i jej wymiary przedstawiono na rys. \ref{fig:domain-dims}.
+
+Zastosowanie siatki typu non-conformal mesh pozwoliło na przygotowanie siatki strukturalnej dla objętości zewnętrznej i proste sterowanie kątem natarcia $\alpha$ oraz w dalszej części sterowanie prędkością kątową drona $\omega$.
+
+     
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[h]{0.7\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{pictures/domain-dimensions.png}
+		\caption{Domena - wymiary, widok płaszczyzny symetrii.}
+	\end{subfigure}	
+	\hfill
+	\begin{subfigure}[h]{0.24\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{pictures/domain-dimensions-front.png}
+		\caption{Domena - wymiary, widok od przodu.}
+	\end{subfigure}
+	\begin{subfigure}[h]{0.6\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{pictures/internal-volume-dimensions.png}
+		\caption{Objętość wewnętrzna.}
+	\end{subfigure}
+	\caption{Domena - wymiary.}
+	\label{fig:domain-dims}
+\end{figure}
+
+
+\subsection{Ustawienia symulacji}
+Do dalszych obliczeń zastosowano następujące ustawienia: model turbulencji k-omega SST, intensywność turbulencji (eng: turbulent intensity) 0.5\%, turbulent length scale 0.005 m, inicjalizacja hybrydowa, 500 iteracji, schemat sprzężenia ciśnienia-prędkości Coupled, równania drugiego rzędu. Ustawienia zastosowano do obliczeń związnych z siatką, zakresem kąta natarcia $\alpha$ drona oraz symulacją ruchu postępowego w stanie ustalonym.
+
+\subsection{Siatka} 
 \subsubsection{Test zbieżności siatki}
 W celu sprawdzenia czy wyniki symulacji są niezależne od wielkości siatki przeprowadzono test zbieżności siatki. Test przeprowadzono poprzez kolejno zmniejszanie elementów siatki aż różnice między wynikami były pomijalnie małe (przyjęto $\Delta<1\%$). Wyniki testu zbieżności zawarto w tabeli \ref{tab:convergence} oraz przedstawiono na wykresie \ref{fig:convergence}.
 
@@ -33,9 +58,10 @@ W celu sprawdzenia czy wyniki symulacji są niezależne od wielkości siatki prz
 		\toprule
 		Siatka & size [mm] & count & cl & cd & cm & $\delta\text{cl}$ & $\delta\text{cd}$ & $\delta\text{cm}$\\ \midrule
 		Zgrubna & 1600 & 6,93E+05 & 0.249 & 0.032 & -0.0153 & - & - & - \\ \midrule
-		Średnia & 800 & 7,86E+05 & 0.223 & 0.031 & -0.0149 & 10.44\% & 3.13\% & 2.61\% \\ \midrule
-		Dokładna & 400 & 9,32E+05 & 0.224 & 0.030 & -0.0148 & 0.44\% & 0.32\% & 0.67\% \\ \midrule
-		Bardzo dokładna & 200 & 1,65E+06 & 0.223 & 0.029 & -0.0146 & 0.44\% & 0.33\% & 1.35\% \\ \midrule    Bardzo dokładna & 100 & 1,65E+06 & 0.223 & 0.029 & -0.0146 & 0\% & 0\% & 0\% \\ 
+		Średnio-zgrubna & 800 & 7,86E+05 & 0.223 & 0.031 & -0.0149 & 10.44\% & 3.13\% & 2.61\% \\ \midrule
+		Średnia & 400 & 9,32E+05 & 0.224 & 0.030 & -0.0148 & 0.44\% & 0.32\% & 0.67\% \\ \midrule
+		Dokładna & 200 & 1,65E+06 & 0.223 & 0.029 & -0.0146 & 0.44\% & 0.33\% & 1.35\% \\ \midrule    
+		Bardzo dokładna & 100 & 1,65E+06 & 0.223 & 0.029 & -0.0146 & 0\% & 0\% & 0\% \\ 
 		
 		\bottomrule
 	\end{tabular}
@@ -43,17 +69,21 @@ W celu sprawdzenia czy wyniki symulacji są niezależne od wielkości siatki prz
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[h]{0.8\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{pictures/cl-conv.png}
 		\caption{Wykres zbieżności cl.}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.45\textwidth}
+	\hfill
+	\begin{subfigure}[h]{0.8\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{pictures/cd-conv.png}
 		\caption{Wykres zbieżności cd.}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.45\textwidth}
+\end{figure}
+\begin{figure}[H]\ContinuedFloat
+	\centering
+	\begin{subfigure}[h]{0.8\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{pictures/cm-conv.png}
 		\caption{Wykres zbieżności cm.}
@@ -62,8 +92,36 @@ W celu sprawdzenia czy wyniki symulacji są niezależne od wielkości siatki prz
 	\label{fig:convergence}
 \end{figure}
 
-Z uwagi na małe zmiany między wynikami siatek medium, medium-fine i fine, uznano siatkę medium-fine za wystarczająco dokładną i w celu ograniczenia czasu trwania obliczeń została ona zastosowana do dalszych symulacji.
-\subsubsection{Ustawienia symulacji}
+Z uwagi na małe zmiany między wynikami siatek średniej a dokładnej uznano siatkę średnią za wystarczająco dokładną i w celu ograniczenia czasu trwania obliczeń została ona zastosowana do dalszych symulacji. Uzyskaną siatkę i jej detale przedstawiono na rysunku \ref{fig:mesh}.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[h]{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{pictures/mesh-side.png}
+		\caption{Siatka - widok od płaszczyzny symetrii.}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[h]{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{pictures/mesh-iso.png}
+		\caption{Siatka - widok izometryczny.}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[h]{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{pictures/drone-side.png}
+		\caption{Siatka - dron, widok ok płaszczyzny symetrii.}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[h]{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{pictures/drone-iso.png}
+		\caption{Siatka - dron, widok izometryczny.}
+	\end{subfigure}
+	\caption{Siatka użyta do dalszych symulacji.}
+	\label{fig:mesh}
+\end{figure}
 
 \subsubsection{y+}
 W celu zamodelowania warstwy przyściennej za pomocą funkcji przyściennych (wall functions), dodano 10 warstw inflacyjnych w okół geometrii drona.
@@ -366,17 +424,17 @@ W celu uzyskania dość dużego zbioru danych przeprowadzono serię symulacji dl
 	\centering
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/L-bulk.png}
 		\caption{Zbiorcze wykresy charakterystyk L.}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/D-bulk.png}
 		\caption{Zbiorcze wykresy charakterystyk D.}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{pictures/dummy.png}
+		\includegraphics[width=1\linewidth]{pictures/M-bulk.png}
 		\caption{Zbiorcze wykresy charakterystyk M.}
 	\end{subfigure}
 	
@@ -384,11 +442,60 @@ W celu uzyskania dość dużego zbioru danych przeprowadzono serię symulacji dl
 	\label{fig:combined-force-graphs}
 \end{figure}    
 
-
-
 \subsection{Symulacja manewrów}
+Aby wyznaczyć wartości sił hydrodynamicznych działających na glidera podczas wykonywania manewrów w punktach zwrotnych trajektorii należy zasymulować jego ruch podczas wykonywania danego manewru. 
 
-\subsubsection{Wariant A}
-\subsubsection{Wariant B}
+W celu wykonania manewru przechylenia glider musi przemieścić swój środek ciężkości, co z uwagi na realizację przemieszczenia nie jest natychmiastowe, lecz następuje stopniowo, skutkuje to zmienną w czasie prędkością kątową $\omega$. Należy więc wyprowadzić funkcję opisującą prędkość kątową $\omega$ w funkcji czasu.
+
+Na początku wykonywania manewru (czyli na początku przemieszczania środka ciężkości) glider będzie miał zerową prędkość kątową $\omega$ i zerowe przyspieszanie kątowe $\alpha$. Tak więc do zamodelowania zmiennej prędkości kątowej użyto funkcji $1-cos\left(\frac{2\pi t}{T}\right)$, co daje zerową początkową prędkość $\omega(t=0) = 0$ i zerowe przyspieszenie początkowe $\alpha(t=0) = 0$.
+
+W celu zaimplementowania obrotu w zakresie od początkowej wartości kąta natarcia $\theta_0$ do końcowej wartości $\theta_1$ wyprowadzono równanie sterujące prędkością kątową drona $\omega(t)$.
+ 
+\begin{equation}
+	\nonumber
+	\omega(t) = \omega_{max}\cdot\left(1-\cos\left(\frac{2\pi\cdot t}{T}\right)\right)
+\end{equation}
+
+\begin{equation}
+	\nonumber
+	\theta_1-\theta_0 = \Delta\theta = \int_{0}^{T}\omega(t)\,dt = \int_{0}^{T}\omega_{max}\cdot\left(1-\cos\left(\frac{2\pi\cdot t}{T}\right)\right)\,dt = \omega_{max}\cdot\text{T}
+\end{equation}
+
+\begin{equation}
+	\nonumber
+	\Delta\theta = \omega_{max}\cdot\text{T} \Longrightarrow \omega_{max}=\frac{\Delta\theta}{\text{T}}
+\end{equation}
+
+Tak więc finalna funkcja prędkości kątowej $\omega(t)$ opisana jest przez równanie \ref{eq:omega}, przy czym po zróżniczkowaniu otrzymany także funkcję przyspieszeń kątowych $\alpha(t)$, która opisana jest przez równanie \ref{eq:alpha}.
+
+\begin{equation}
+	\omega(t) = \frac{\Delta\theta}{\text{T}}\cdot\left(1-\cos\left(\frac{2\pi\cdot t}{T}\right)\right)
+	\label{eq:omega}
+\end{equation}
+
+\begin{equation}
+	\alpha(t) = \frac{d\omega(t)}{dt} = \frac{\Delta\theta}{\text{T}}\cdot\frac{2\pi}{\text{T}}\cdot\sin\left(\frac{2\pi\cdot t}{T}\right)
+	\label{eq:alpha}
+\end{equation}
+
+Przykładowe przebiegi $\theta(t)$, $\omega(t)$, $\alpha(t)$ dla T = 60 s i $\Delta\theta = 60^\circ$ przedstawiono na rysunku \ref{fig:omegat}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pictures/movement-function-example.png}
+	\caption{Przykładowe przebiegi $\theta(t)$, $\omega(t)$, $\alpha(t)$}
+	\label{fig:omegat}
+\end{figure}
+
+\subsubsection{Ustawienia symulacji}
+Funkcja prędkości kątowej $\omega(t)$ została zaimplementowana w ANSYS Fluent za pomocą wyrażeń (rys. xxx). Nie ma jednoznacznie określonych czasów wykonywania manewru przechylenia dla tego typu dronów, jednak wedle różnych badań mogę wynosić one 
+
+jednak typowo wynoszą one $T = 30-60 \ \text{s}$\cite{Graver2005UNDERWATERGD}.
+
+
+\subsubsection{Ustawienia symulacji}
+
+
+
 
 \subsection{Results}
